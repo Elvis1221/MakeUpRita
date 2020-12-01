@@ -186,6 +186,12 @@
     .cover {
         width: 100%;
     }
+    .footer {
+        border-radius: 0;
+    }
+    .header {
+        border-radius: 0;
+    }
 
 
 
