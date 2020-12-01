@@ -2,30 +2,35 @@
     box-sizing: border-box;
 }
 
-body {
-
-    padding: 0;
-    background-image: url("../img/body.jpg");
-    font-family: "Roboto Light", sans-serif;
-}
-.wrapper {
+.body {
     width: 100%;
     max-width: 1200px;
+    background-image: url("../img/body.jpg");
+    font-family: "Roboto Light", sans-serif;
     margin: 0 auto;
+    border: 1px solid red;
 }
+/*.wrapper {*/
+/*    width: 100%;*/
+/*    max-width: 1200px;*/
+/*    height: 100%;*/
+/*    margin: 0 auto;*/
+/*}*/
 /* логотип и  меню */
 .header {
     /*position: fixed;*/
     width: 100%;
     max-width: 1200px;
-    height: 100px;
+    /*height: 100%;*/
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     background-color: rgba(0, 3, 6, 0.7);
     margin-bottom: 20px;
-    box-shadow: 1px 1px 10px darkmagenta;
+    box-shadow: 1px 2px 10px #3c3f41;
     border-radius: 5px;
 
 }
@@ -52,7 +57,6 @@ body {
 
 .header-link {
     text-decoration: none;
-    /*display: block;*/
     color: #be14ae;
     font-family: "Comic Sans MS", sans-serif;
     font-size: 20px;
@@ -62,24 +66,43 @@ body {
 .header-link:hover, .logo:hover {
     background: rgba(7, 195, 242, 0);
     color: #f217e1;
-    box-shadow: inset 0 0 0 #3c3f41;
+    box-shadow: 1px 2px 10px #3c3f41;
 }
 
 .header-link:not(first-child) {
     margin-left: 20px;
 }
 
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*align-items: center;*/
+    flex-wrap: wrap;
 
+
+}
 .about-me {
-    box-shadow: 1px 1px 10px darkmagenta;
+    width: 100%;
+    box-shadow: 1px 2px 10px #3c3f41;
     border-radius: 5px;
+}
+
+.description {
+    width: 60%;
+    /*height: 40vh;*/
+    border: 1px solid   red;
+    display: block;
 }
 .footer {
     width: 100%;
     max-width: 1200px;
-    padding: 30px 0;
+    padding: 20px;
     background-color: rgba(0, 3, 6, 0.7);
-    box-shadow: 1px 1px 10px darkmagenta;
+    box-shadow: 1px 2px 10px #3c3f41;
     border-radius: 5px;
 }
 
@@ -111,7 +134,7 @@ body {
     background-color: #3c3f41;
     flex-basis: 25%;
     transition: all 0.3s;
-    box-shadow: 1px 1px 10px darkmagenta;
+    box-shadow: 1px 2px 10px #3c3f41;
     border-radius: 5px;
 }
 
@@ -153,21 +176,27 @@ body {
     background: url("../img/photo-10.jpg") no-repeat center center;
     background-size: cover;
 }
-
-
+/*адаптация*/
 @media  (max-width: 640px) {
 
     .slider {
-        height: 100vh;
+        height: 150vh;
         flex-flow: column;
     }
     .item {
-        width: 40%;
+        width: 100%;
+        height:50% ;
     }
-    /*.item:hover {*/
-    /*    flex-basis: 100%;*/
+    .description {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .cover {
+        width: 100%;
+    }
 
-    /*}*/
+
+
 }
 
 
