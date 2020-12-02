@@ -1,3 +1,9 @@
+/*font-family: 'Nerko One', cursive;*/
+/*font-family: 'Dancing Script', cursive;*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Major Mono Display', monospace;*/
+
+
 * {
     box-sizing: border-box;
 }
@@ -36,7 +42,8 @@
 .header-link {
     text-decoration: none;
     color: #be14ae;
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: 'Dancing Script', cursive;
+
     font-size: 20px;
 }
 
@@ -51,8 +58,8 @@
 
 .logo {
     text-decoration: none;
-    font-weight: bold;
-    font-family: "Colonna MT", sans-serif;
+    /*font-weight: bold;*/
+    font-family: 'Dancing Script', cursive;
     font-size: 50px;
     color: #be14ae;
     display: block;
