@@ -220,6 +220,10 @@
         font-size: 40px;
     }
 
+    .logo {
+        font-size: 40px;
+    }
+
     .header-burger {
         display: block;
         position: relative;
@@ -291,7 +295,7 @@
     }
 
     .content {
-        padding: 75px 0 0 0;
+        padding: 65px 0 0 0;
     }
 
     .nav-menu {
